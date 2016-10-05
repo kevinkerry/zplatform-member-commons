@@ -10,6 +10,8 @@
  */
 package com.zlebank.zplatform.member.commons.utils;
 
+import org.slf4j.Logger;
+
 import net.sf.cglib.beans.BeanCopier;
 
 /**
@@ -22,6 +24,7 @@ import net.sf.cglib.beans.BeanCopier;
  */
 public class BeanCopyUtil  {
 
+	
     @SuppressWarnings("unchecked")
     public static <T> T copyBean(T t) {
         BeanCopier beanCopier = BeanCopier.create(t.getClass(), t.getClass(),
